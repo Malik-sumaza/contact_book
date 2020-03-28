@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Cormorant Garamond", serif;
+  background: linear-gradient(to top left, powderblue, pink);
+}
+
+.header {
+  margin: 20px 45px;
+  padding: 0;
+}
+
+.logo-decs {
+  color: rgb(84, 192, 165);
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.logo-decs:hover {
+  color: rgb(159, 98, 209);
+}
+
+.modal-fade {
+  display: none;
+}
+
+.modal-fade:before {
+  content: "";
+  background: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  z-index: 9999;
+}
+
+.modal-popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  padding: 20px;
+  width: 360px;
+  margin-left: -200px;
+  background: rgb(84, 192, 165);
+  border: 1px solid pink;
+  border-radius: 4px;
+  z-index: 99999;
+  opacity: 1;
+}
+
+.ourNames {
+  list-style-type: none;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.name {
+  margin: 20px 40px;
+}
+
+.modal-popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-decoration: none;
+  color: pink;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 4px;
+  background-color: #e1f5e3;
+  font-family: "Cormorant Garamond", serif;
+}
+
+input {
+  border: 0;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 20px;
+  margin: 5px;
+  color: white;
+  background-color: rgb(84, 192, 165);
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 18px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.btn:hover {
+  background-color: rgb(218, 181, 195);
+  color: rgb(90, 90, 90);
+}
+
+table {
+  width: 957px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-collapse: collapse;
+  border-spacing: 15px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+table,
+th,
+td {
+  border-bottom: 1px solid white;
+}
+
+th {
+  height: 2em;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(84, 192, 165);
+  color: white;
+}
+
+td {
+  height: 2em;
+  text-align: center;
+  padding: 10px;
+}
+
+tr:hover {
+  background-color: #e7e6e6;
+}
+
+.popup-open {
+  display: inline-block;
+  padding: 10px 7px;
+  background: rgb(84, 192, 165);
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 0;
+  margin: 30px;
+  text-align: center;
+}
+
+.popup-open:hover {
+  background-color: rgb(218, 181, 195);
+  color: rgb(90, 90, 90);
+}
+
+.popup-fade {
+  display: none;
+}
+
+.popup-fade:before {
+  content: "";
+  background: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  z-index: 9999;
+}
+
+.popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  padding: 20px;
+  width: 360px;
+  margin-left: -200px;
+  background: #fff;
+  border: 1px solid orange;
+  border-radius: 4px;
+  z-index: 99999;
+  opacity: 1;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-decoration: none;
+  color: rebeccapurple;
+  cursor: pointer;
+}
+
+.popup-close:hover {
+  color: red;
+}
+
+.btn-del img {
+  cursor: pointer;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.item-info.email:hover {
+  color: teal;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#btn-edit {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 5px;
+  color: white;
+  background-color: rgb(84, 192, 165);
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 18px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+#btn-edit:hover {
+  color: rgb(84, 192, 165);
+  background-color: white;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контактная книжка</title>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <h1 class="logo-decs">Властелин JS</h1>
+      </div>
+      <div class="modal-fade">
+        <div class="modal-popup">
+          <ul class="ourNames">
+            <li class="name"><span class="name">Айдай</span></li>
+            <li class="name"><span class="name">Малик</span></li>
+            <li class="name"><span class="name">Адилет</span></li>
+            <li class="name"><span class="name">Арген</span></li>
+            <li class="name"><span class="name">Аяна</span></li>
+            <a href="#" class="modal-popup-close">x</a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container myForm">
+      <div class="inputs">
+        <input type="text" class="firstName" placeholder="Имя" />
+        <input type="text" class="lastName" placeholder="Фамилия" />
+        <input type="text" class="phoneNum" placeholder="Номер телефона" />
+        <input type="text" class="email" placeholder="E-mail" />
+        <button class="btn">Добавить контакт</button>
+      </div>
+    </div>
+    <div class="popup-fade">
+      <div class="popup">
+        <a href="#" class="popup-close">Закрыть</a>
+        <form class="inputs">
+          <input
+            type="text"
+            name="firstName"
+            class="firstName"
+            placeholder="Имя"
+          />
+          <input
+            type="text"
+            name="lastName"
+            class="lastName"
+            placeholder="Фамилия"
+          />
+          <input
+            type="text"
+            name="phoneNum"
+            class="phoneNum"
+            placeholder="Номер телефона"
+          />
+          <input type="text" name="email" class="email" placeholder="E-mail" />
+          <button class="btn">Редактировать контакт</button>
+        </form>
+      </div>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Имя</th>
+          <th>Фамилия</th>
+          <th>Номер телефона</th>
+          <th>E-mail</th>
+          <th>Удалить контакт</th>
+          <th>Редактировать контакт</th>
+        </tr>
+      </thead>
+      <tbody class="tbody"></tbody>
+    </table>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
